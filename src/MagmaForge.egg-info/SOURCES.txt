@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/MagmaForge.egg-info/PKG-INFO
+src/MagmaForge.egg-info/SOURCES.txt
+src/MagmaForge.egg-info/dependency_links.txt
+src/MagmaForge.egg-info/top_level.txt
+src/magmaforge/__init__.py
+src/magmaforge/plot.py
+src/magmaforge/state_info.py
+src/magmaforge/system.py
+src/magmaforge/system_calculator.py
+tests/test_equil.py
