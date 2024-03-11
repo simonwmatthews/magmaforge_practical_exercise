@@ -1,7 +1,6 @@
 # Pull thermoengine pkg from docker container
 # FROM registry.gitlab.com/enki-portal/thermoengine:master
-# FROM registry.gitlab.com/enki-portal/thermoengine:staging
-FROM thermoengine:v1
+FROM registry.gitlab.com/enki-portal/thermoengine:staging
 
 # Copy local app to container
 COPY . ${HOME}/app
@@ -24,5 +23,7 @@ USER ${NB_USER}
 WORKDIR ${HOME}/app
 RUN pip install --upgrade pip
 RUN pip install -e .
+RUN pip install mpltern
+RUN pip install pyrolite
 # RUN make devinstall
 WORKDIR ${HOME}
